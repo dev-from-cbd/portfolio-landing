@@ -129,6 +129,7 @@ body {
     animation: animateImg 10s ease-in-out infinite;
 }
 
+/*
 .home-container .home-img::before {
     content: '';
     position: absolute;
@@ -138,7 +139,17 @@ body {
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     animation: animateBg 10s ease-in-out infinite;
 }
+*/
 
+.home-container .home-img::before {
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    background: linear-gradient(70deg, transparent 0%, var(--color-primary) 60%);
+    border-radius: 50%;
+    animation: animateBg 10s ease-in-out infinite;
+}
 
 /* ANIMACION DE MOVIMIENTO */
 
